@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EVENT</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/flexboxgrid.min.css" />
+	<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="css/nativedroid2.css">
+	<link rel="stylesheet" href="css/nativedroid2.color.deep-orange.css">
+	<link rel="stylesheet" href="css/Event_style.css">
+</head>
+<body>
+	<section  id="events" data-role="page">
+		<header data-role="header">
+			<h1 class="align-center">Categorías</h1>
+		</header><!-- /header -->
+		<section data-role="content">
+			<section class="row">
+				<article class="col-xs-6">
+					<a href="https://www.google.com.mx" class="nd2-card">
+						<aside class="card-media">
+							<img src="img/all.jpg">
+							<aside class='card-media-overlay'>
+								<div class="card-title has-supporting-text background_menu">
+									<h2 class="card-primary-title align-center">Todos</h2>
+								</div>
+							</aside>
+						</aside>
+					</a>
+				</article>
+				<article class="col-xs-6">
+					<a href="https://www.google.com.mx" class="nd2-card">
+						<aside class="card-media">
+							<img src="img/dance.jpg">
+							<aside class='card-media-overlay'>
+								<div class="card-title has-supporting-text background_menu">
+									<h2 class="card-primary-title align-center">Danza</h2>
+								</div>
+							</aside>
+						</aside>
+					</a>
+				</article>
+				<article class="col-xs-6">
+					<a href="https://www.google.com.mx" class="nd2-card">
+						<aside class="card-media">
+							<img src="img/music.jpg">
+							<aside class='card-media-overlay'>
+								<div class="card-title has-supporting-text background_menu">
+									<h2 class="card-primary-title align-center">Música</h2>
+								</div>
+							</aside>
+						</aside>
+					</a>
+				</article>
+				<article class="col-xs-6">
+					<a href="https://www.google.com.mx" class="nd2-card">
+						<aside class="card-media">
+							<img src="img/salud.jpg">
+							<aside class='card-media-overlay'>
+								<div class="card-title has-supporting-text background_menu">
+									<h2 class="card-primary-title align-center">Salud</h2>
+								</div>
+							</aside>
+						</aside>
+					</a>
+				</article>
+			</section>
+		</section>
+		<nd2-include data-src="footer.html"></nd2-include>
+	</section>
+	<!-- Page favorites -->
+	<section  id="favorites" data-role="page">
+		<header data-role="header">
+			<h1 class="align-center">Favoritos</h1>
+		</header><!-- /header -->
+		<section data-role="content">
+			<section class="row">
+			</section>
+		</section>
+		<nd2-include data-src="footer.html"></nd2-include>
+	</section>
+	<!--Termine Favorites-->
+	<!-- Page Search -->
+	<section  id="buscar" data-role="page">
+		<header data-role="header" id="busqueda">
+		<a href="#" class="ui-btn ui-btn-right wow fadeIn nd2-search-button waves-effect waves-button  waves-effect waves-button waves-effect waves-button"  data-wow-delay="1s" id="btnbuscar"><i class="zmdi zmdi-search"></i></a>
+		<h1 class="align-center">Buscar</h1>
+		</header><!-- /header -->
+		<section data-role="content">
+			<aside id="busevent" class="ocultador">
+			<input type="search" name="intsearch" value="" placeholder="Buscar evento...">
+			</aside>
+		</section>
+		<nd2-include data-src="footer.html"></nd2-include>
+	</section>
+	<!--Termine Search-->
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/jquery-migrate-3.0.0.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="vendor/waves/waves.min.js"></script>
+	<script src="vendor/wow/wow.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/nativedroid2.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>

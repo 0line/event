@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EVENT</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/flexboxgrid.min.css" />
+	<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="css/nativedroid2.css">
+	<link rel="stylesheet" href="css/nativedroid2.color.deep-orange.css">
+	<link rel="stylesheet" href="vendor/waves/waves.min.css">
+	<link rel="stylesheet" href="vendor/wow/animate.css">
+	<link rel="stylesheet" href="css/Event_style.css">
+</head>
+<body>
+	<section id="login" data-role="page">
+		<header data-role="header" data-position="fixed" class="wow fadeIn  clr-bg-gray">
+            			<h1 class="Page_title align-center">Login</h1>
+        		</header>
+		<section data-role="content">
+			<section class="login">
+				<article class="">
+					<aside class="col-xs-12 center-xs">
+						<img src="img/event_icon.png" alt="event_icon.png"
+						class="img">
+					</aside>
+				</article>
+			        	<article data-role="fieldcontain" class="ui-hide-label">
+			        		<label for="txtuser">Usuario:</label>
+			        		<input type="text" name="txtuser" id="txtuser" value="" placeholder="Usuario" required><br>
+			        		<label for="txtpassword">Contraseña:</label>
+			        		<input type="password" name="txtpassword" id="txtpassword" value="" placeholder="Contraseña" required>
+			        	</article>
+			        	<article class="row center-md">
+			        		<aside class="col-xs-12">
+			        			<button class="ui-btn clr-btn-accent-orange" id="loginbtn">Ingresar
+			        			<i class="zmdi zmdi-lock-open"></i></button><br>
+			        		</aside>
+			        		<aside class="col-xs-12">
+			        			<button class="ui-btn clr-btn-accent-orange" id="registrarme">Registrarme
+			        			<i class="zmdi zmdi-account-add"></i></button>
+			        		</aside>
+			        	</article>
+			        	<span id="resultado"></span>
+			</section>
+		</section>
+	</section>	
+	<section id="newuser" data-role="page">
+		<header data-role="header">
+			<a href="#login" data-rel="back" class="ui-btn clr-btn-accent-white">
+			<i class="zmdi zmdi-chevron-left"></i></a>
+			<h1 class="text-xs-center">Registrarme</h1>
+		</header>
+		<article data-role="content">
+			<label for="txtname">Nombres:</label>
+			<input type="text" name="txtname" id="txtname" value="" placeholder="Nombres" required/>
+			<label for="txtap">Apellido Paterno:</label>
+			<input type="text" name="txtap" id="txtap" value="" placeholder="Apellido Paterno" required/>
+			<label for="txtam">Apellido Materno:</label>
+			<input type="text" name="txtam" id="txtam" value="" placeholder="Apellido Materno" required/>
+			<label for="txtfn">Fecha de Nacimiento:</label>
+			<input type="date" data-role="date" placeholder="1996-07-17" name="txtfn" id="txtfn" required/>
+			<label for="txttel">Teléfono:</label>
+			<input type="tel" name="txttel" id="txttel" value="" placeholder="999-999-999" required/>
+			<label for="txtdir">Dirección:</label>
+			<input type="text"  placeholder="Ingresa tu ciudad" name="txtdir" id="txtdir" required/>
+			<label for="txtemail">Correo Eléctronico:</label>
+			<input type="email" name="txtemail" id="txtemail" value="" placeholder="email@email.com" required/>
+			<label for="txtimg">Imagen de Perfil:</label>
+			<input type="file" name="txtimg" id="txtimg" value="" placeholder="imagen">
+			<label for="txtusuario">Usuario:</label>
+			<input type="text" name="txtusuario" id="txtusuario"  value="" placeholder="Nombres" required/>
+			<label for="txxpwd">Contraseña:</label>
+			<input type="password" name="txtpwd" id="txtpwd" value="" placeholder="Contraseña"><label for="txxpwd2" required/>Confirmar contraseña:</label>
+			<input type="password" name="txtpwd2" id="txtpwd2" value="" placeholder="Contraseña" required/>
+			<button class="ui-btn clr-btn-accent-orange" id="usuarionuevo">Enviar
+			<i class="zmdi zmdi-mail-send"></i></button>
+			<a href="#login" class="ui-btn clr-btn-accent-orange">Cancelar
+			<i class="zmdi zmdi-close"></i></a>
+		</article>
+	</section>
+	<!--Scripts JS para el funcionamiento correcto de la app-->
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+	<script src="js/jquery-migrate-3.0.0.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<!-- <script type="text/javascript" src="js/jquery-1.11.1.js"></script> -->
+	<script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgWwDKbic4cAZkY_RFLrpLkNbMMjHtxLM&callback=initMap"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="vendor/waves/waves.min.js"></script>
+	<script src="vendor/wow/wow.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/nativedroid2.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBgWwDKbic4cAZkY_RFLrpLkNbMMjHtxLM&libraries=places&language=MX"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.Page_title{
+	text-align: center;
+	padding: 0;
+}
+.background_menu{
+	background-color: rgba(0,0,0,0.3);
+}
+.menu_item i{
+	background: none;
+	border:none;
+	border-bottom:#FFC000;
+	color: #777777;
+}
+.menu_item i:hover,.menu_item i:focus{
+	background: none;
+	border:none;
+	border-bottom:#FFC000;
+	color: #FFA800;
+}
+.ocultador{
+	display: none;
+}
+.login{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 15%;
+	margin-top: 15%;
+}
+.img{
+	max-width: 100% !important;
+	 height: auto;
+}
